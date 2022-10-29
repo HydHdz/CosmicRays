@@ -42,4 +42,4 @@ jobs:
       - name: Verifying
         run: |
           echo Verifying...
-          echo Launch ready.
+          echo Launch ready. Set.
