@@ -1,0 +1,23 @@
+dz                   = 0.1     delta z
+x_min                = -20.0     min x
+x_max                = +20.0     max x
+dx                   = 1.0     delta x
+y_min                = -20.0     min y
+y_max                = +20.0     max y
+dy                   = 1.0     delta y
+p_Ekin_grid          = Ekin     p||Ekin alignment
+p_min                = 1000     min momentum (MV)
+p_max                = 4000     max momentum (MV)
+p_factor             = 1.3     momentum factor
+Ekin_min             = 1.0      min kinetic energy per nucleon (MeV)
+Ekin_max             = 1.0e8     max kinetic energy per nucleon (MeV)
+Ekin_factor          = 1.1     kinetic energy per nucleon factor
+gamma_rays           = 0     1=compute gamma rays 2=compute HI, H2 skymaps separately.
+pi0_decay            = 3     1= old formalism 2=Blattnig et al. 3=Kamae et al.
+IC_isotropic         = 1     1=compute isotropic IC: 1=compute full; 2=store skymaps components
+IC_anisotropic       = 0     1=compute anisotropic IC
+bremss               = 1     1=compute bremsstrahlung
+integration_mode     = 0     integr.over part.spec.: =1-old E*logE; =0-PL analyt.
+E_gamma_min          = 50     min gamma-ray energy (MeV)
+E_gamma_max          = 1.0e6     max gamma-ray energy (MeV)
+E_gamma_factor       = 1.2996566     gamma-ray energy factor

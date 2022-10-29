@@ -1,0 +1,15 @@
+nu_synch_factor      = 2.0     synchrotron frequency factor
+long_min             = 0     gamma-ray intensity skymap longitude minimum (deg)
+long_max             = 360     gamma-ray intensity skymap longitude maximum (deg)
+lat_min              = -90     gamma-ray intensity skymap latitude minimum (deg)
+lat_max              = +90     gamma-ray intensity skymap latitude maximum (deg)
+d_long               = 0.5     gamma-ray intensity skymap longitude binsize (deg)
+d_lat                = 0.5     gamma-ray intensity skymap latitude binsize (deg)
+healpix_order        = 7     order for healpix skymaps. 6 gives ~1.0 degree resolution and it changes by an order of 2.
+lat_substep_number   = 1     latitude bin splitting (0,1=no split, 2=split in 2...)
+LoS_step             = 0.01     kpc, Line of Sight (LoS) integration step
+LoS_substep_number   = 1     number of substeps per LoS integration step (0,1=no substeps)
+DM_positrons         = 0     1=compute DM positrons
+DM_electrons         = 0     1=compute DM electrons
+DM_antiprotons       = 0     1=compute DM antiprotons
+DM_gammas            = 0     1=compute DM gammas

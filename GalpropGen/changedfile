@@ -1,0 +1,33 @@
+z_min                = -05.6     min z
+z_max                = +05.6     max z
+
+ISRF_factors         = 1.36,1.36,1.0     ISRF factors for IC calculation: optical, FIR, CMB
+
+synchrotron          = 0     1=compute synchrotron
+nu_synch_min         = 1.0e6     min synchrotron frequency (Hz)
+nu_synch_max         = 1.0e10     max synchrotron frequency (Hz)
+
+DM_double0           = 0.0     not used
+DM_double1           = 0.0     not used
+
+D0_xx                = 4.85e28     diffusion coefficient at reference rigidity
+D_rigid_br           = 4.0e3     reference rigidity for diffusion coefficient, MV
+D_g_1                = 0.40     diffusion coefficient index below reference rigidity
+D_g_2                = 0.40     diffusion coefficient index above reference rigidity
+diff_reacc           = 1     1=include diffusive reacceleration
+v_Alfven             = 24.0     Alfven speed in km s^{-1}
+damping_p0           = 1.0e6     some rigidity, MV, (where CR density is low)
+damping_const_G      = 0.02     a const derived from fitting B/C
+damping_max_path_L   = 3.0e21     Lmax~1 kpc, max free path
+convection           = 1     1=include convection
+v0_conv              = 0.0     V0 convection in km s^-1
+dvdz_conv            = 1.0     dV/dz=grad V in km s^-1 kpc^-1
+nuc_rigid_br         = 11.66e3    reference rigidity for primary nucleus injection index in MV
+nuc_g_1              = 1.88     nucleus injection index below reference rigidity
+nuc_g_2              = 2.38     nucleus injection index above reference rigidity
+inj_spectrum_type    = rigidity     rigidity||beta_rig||Etot nucleon injection spectrum tipe
+electron_g_0         = 1.60     electron injection index below electron_rigid_br0
+electron_rigid_br0   = 2.178e3     reference rigidity0 for electron injection index in MV
+electron_g_1         = 2.4277     electron injection index between electron_rigid_br0 and electron_rigid_br
+electron_rigid_br    = 2.23e6     reference rigidity for electron injection index in MV
+electron_g_2         = 4.00     electron injection index above reference rigidity
