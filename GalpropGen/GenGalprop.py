@@ -1,8 +1,9 @@
 #Module for compressing into zip file
 import zipfile as zip
+import os
 
 #Opening base files
-namebase="basefile"
+namebase="GalpropGen/basefile"
 basefile=['','','','','']
 for i in range(1,6):
     basefile[i-1]=open(namebase+str(i),'r')
@@ -281,7 +282,7 @@ def writevar(l,fil,r,s):
 #Changing z_min, z_max
 file1=['','','','','']
 name1='galdef_54_F1'
-zipF1=zip.ZipFile('galdef_54_F1.zip','w')
+zipF1=zip.ZipFile('GalpropGen/galdef_54_F1.zip','w')
 for i in range(1,6):
     #basefile[i-1]=open(namebase+str(i),'r')
     file1[i-1]=open(name1+"_"+str(i),'w')
@@ -295,12 +296,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file1[i-1].close()
     zipF1.write(name1+"_"+str(i))
+    os.remove(name1+"_"+str(i))
 zipF1.close()
     
 #Changing ISRF factors
 file2=['','','','','']
 name2='galdef_54_F2'
-zipF2=zip.ZipFile('galdef_54_F2.zip','w')
+zipF2=zip.ZipFile('GalpropGen/galdef_54_F2.zip','w')
 for i in range(1,6):
     #basefile[i-1]=open(namebase+str(i),'r')
     file2[i-1]=open(name2+"_"+str(i),'w')
@@ -314,12 +316,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file2[i-1].close()
     zipF2.write(name2+"_"+str(i))
+    os.remove(name2+"_"+str(i))
 zipF2.close()
 
 #Changing max synchrotron freq
 file3=['','','','','']
 name3='galdef_54_F3'
-zipF3=zip.ZipFile('galdef_54_F3.zip','w')
+zipF3=zip.ZipFile('GalpropGen/galdef_54_F3.zip','w')
 for i in range(1,6):
     file3[i-1]=open(name3+"_"+str(i),'w')
     for j in range(1,6):
@@ -332,13 +335,14 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file3[i-1].close()
     zipF3.write(name3+"_"+str(i))
+    os.remove(name3+"_"+str(i))
 zipF3.close()
     
 
 #Changing DM double parameters
 file4=['','','','','']
 name4='galdef_54_F4'
-zipF4=zip.ZipFile('galdef_54_F4.zip','w')
+zipF4=zip.ZipFile('GalpropGen/galdef_54_F4.zip','w')
 for i in range(1,6):
     file4[i-1]=open(name4+"_"+str(i),'w')
     for j in range(1,6):
@@ -352,6 +356,7 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file4[i-1].close()
     zipF4.write(name4+"_"+str(i))
+    os.remove(name4+"_"+str(i))
 zipF4.close()
     
 
@@ -359,7 +364,7 @@ zipF4.close()
 #Changing D0_xx
 file5=['','','','','']
 name5='galdef_54_F5'
-zipF5=zip.ZipFile('galdef_54_F5.zip','w')
+zipF5=zip.ZipFile('GalpropGen/galdef_54_F5.zip','w')
 for i in range(1,6):
     file5[i-1]=open(name5+"_"+str(i),'w')
     for j in range(1,6):
@@ -372,13 +377,14 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file5[i-1].close()
     zipF5.write(name5+"_"+str(i))
+    os.remove(name5+"_"+str(i))
 zipF5.close()
     
 
 #Changing diffussion coef. D_g_1 and 2
 file6=['','','','','']
 name6='galdef_54_F6'
-zipF6=zip.ZipFile('galdef_54_F6.zip','w')
+zipF6=zip.ZipFile('GalpropGen/galdef_54_F6.zip','w')
 for i in range(1,6):
     file6[i-1]=open(name6+"_"+str(i),'w')
     for j in range(1,6):
@@ -391,12 +397,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file6[i-1].close()
     zipF6.write(name6+"_"+str(i))
+    os.remove(name6+"_"+str(i))
 zipF6.close()
 
 #Changing Alfen velocity
 file7=['','','','','']
 name7='galdef_54_F7'
-zipF7=zip.ZipFile('galdef_54_F7.zip','w')
+zipF7=zip.ZipFile('GalpropGen/galdef_54_F7.zip','w')
 for i in range(1,6):
     file7[i-1]=open(name7+"_"+str(i),'w')
     for j in range(1,6):
@@ -409,13 +416,14 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file7[i-1].close()
     zipF7.write(name7+"_"+str(i))
+    os.remove(name7+"_"+str(i))
 zipF7.close()
     
     
 #Changing velocity gradient
 file8=['','','','','']
 name8='galdef_54_F8'
-zipF8=zip.ZipFile('galdef_54_F8.zip','w')
+zipF8=zip.ZipFile('GalpropGen/galdef_54_F8.zip','w')
 for i in range(1,6):
     file8[i-1]=open(name8+"_"+str(i),'w')
     for j in range(1,6):
@@ -428,13 +436,14 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file8[i-1].close()
     zipF8.write(name8+"_"+str(i))
+    os.remove(name8+"_"+str(i))
 zipF8.close()
     
     
 #Changing nucleus injection index
 file9=['','','','','']
 name9='galdef_54_F9'
-zipF9=zip.ZipFile('galdef_54_F9.zip','w')
+zipF9=zip.ZipFile('GalpropGen/galdef_54_F9.zip','w')
 for i in range(1,6):
     file9[i-1]=open(name9+"_"+str(i),'w')
     for j in range(1,6):
@@ -448,12 +457,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file9[i-1].close()
     zipF9.write(name9+"_"+str(i))
+    os.remove(name9+"_"+str(i))
 zipF9.close()
     
 #Changing electron injection index
 file10=['','','','','']
 name10='galdef_54_F10'
-zipF10=zip.ZipFile('galdef_54_F10.zip','w')
+zipF10=zip.ZipFile('GalpropGen/galdef_54_F10.zip','w')
 for i in range(1,6):
     file10[i-1]=open(name10+"_"+str(i),'w')
     for j in range(1,6):
@@ -466,12 +476,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file10[i-1].close()
     zipF10.write(name10+"_"+str(i))
+    os.remove(name10+"_"+str(i))
 zipF10.close()
 
 #Changing electron injection index
 file11=['','','','','']
 name11='galdef_54_F11'
-zipF11=zip.ZipFile('galdef_54_F11.zip','w')
+zipF11=zip.ZipFile('GalpropGen/galdef_54_F11.zip','w')
 for i in range(1,6):
     file11[i-1]=open(name11+"_"+str(i),'w')
     for j in range(1,6):
@@ -484,12 +495,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file11[i-1].close()
     zipF11.write(name11+"_"+str(i))
+    os.remove(name11+"_"+str(i))
 zipF11.close()
 
 #Changing electron injection index
 file12=['','','','','']
 name12='galdef_54_F12'
-zipF12=zip.ZipFile('galdef_54_F12.zip','w')
+zipF12=zip.ZipFile('GalpropGen/galdef_54_F12.zip','w')
 for i in range(1,6):
     file12[i-1]=open(name12+"_"+str(i),'w')
     for j in range(1,6):
@@ -502,12 +514,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file12[i-1].close()
     zipF12.write(name12+"_"+str(i))
+    os.remove(name12+"_"+str(i))
 zipF12.close()
 
 #Changing electron injection index
 file13=['','','','','']
 name13='galdef_54_F13'
-zipF13=zip.ZipFile('galdef_54_F13.zip','w')
+zipF13=zip.ZipFile('GalpropGen/galdef_54_F13.zip','w')
 for i in range(1,6):
     file13[i-1]=open(name13+"_"+str(i),'w')
     for j in range(1,6):
@@ -520,12 +533,13 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file13[i-1].close()
     zipF13.write(name13+"_"+str(i))
+    os.remove(name13+"_"+str(i))
 zipF13.close()
 
 #Changing electron injection index
 file14=['','','','','']
 name14='galdef_54_F14'
-zipF14=zip.ZipFile('galdef_54_F14.zip','w')
+zipF14=zip.ZipFile('GalpropGen/galdef_54_F14.zip','w')
 for i in range(1,6):
     file14[i-1]=open(name14+"_"+str(i),'w')
     for j in range(1,6):
@@ -538,6 +552,7 @@ for i in range(1,6):
         basefile[j-1].seek(0)
     file14[i-1].close()
     zipF14.write(name14+"_"+str(i))
+    os.remove(name14+"_"+str(i))
 zipF14.close()
     
 
