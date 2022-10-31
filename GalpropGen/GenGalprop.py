@@ -2,7 +2,7 @@
 import zipfile as zip
 
 #Opening base files
-namebase="basefile"
+namebase="GalpropGen/basefile"
 basefile=['','','','','']
 for i in range(1,6):
     basefile[i-1]=open(namebase+str(i),'r')
